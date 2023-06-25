@@ -5,7 +5,7 @@ import {
   GetServerSidePropsContext,
 } from "next";
 import React from "react";
-
+import Image from "next/image";
 interface Detail {
   list_name: string;
   books: Book[];
@@ -32,25 +32,30 @@ export default function Detail({
   return (
     <>
       <Seo title={books.list_name} />
+      
       <div className="wrapper">
         <span className="title">{books.list_name}</span>
       </div>
       <div className="container">
         {books.books.map((book) => (
           <div className="bookList">
-            <img
-              className="img"
-              src={book.book_image}
-              width={200}
-              height={260}
-            />
+            {book.book_image ? (
+              <img width={200} height={260} src={book.book_image} />
+            ) : (
+              <Image
+                src="/images/basic.png"
+                alt="Default Image"
+                width={200}
+                height={260}
+              />
+            )}
             <h3>
               {book.title.length < 19
                 ? book.title
                 : book.title.slice(0, 18) + "..."}
             </h3>
             <p>{book.author}</p>
-            <a href={book.amazon_product_url}>Buy now &rarr;</a>
+            <a href={book.amazon_product_url}>Buy now! &rarr;</a>
           </div>
         ))}
       </div>
@@ -76,8 +81,9 @@ export default function Detail({
           margin: 30px;
           box-sizing: border-box;
           border: solid rgba(47, 54, 64, 1) 2px;
-          background-color:rgba(113, 128, 147,1.0);
+          background-color:#879bb6;
           border-radius: 10px;
+          padding:20px
         }
         .bookList {
           border: solid rgba(47, 54, 64, 1) 7px;
@@ -105,7 +111,6 @@ export default function Detail({
         .bookList a {
           margin-top: 25px;
           font-size: 20px;
-          color: black;
         }
       `}</style>
    </>

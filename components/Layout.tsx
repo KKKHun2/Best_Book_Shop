@@ -15,6 +15,7 @@ export default function Layout({children}:React.PropsWithChildren){
         <style jsx global>{`
             a{
                 text-decoration: none;
+                color:black;
             }
         `}</style>
     </>

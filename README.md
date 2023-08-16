@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Next.js 연습해보기
+next.js활용해서 북마켓 
+간단하게로 api 불러와서
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<img src="https://github.com/KKKHun2/Best_Book_Shop/assets/105702862/2c65d2a1-b0d7-4474-a61f-349e4205bac9.png" width="700" height="500">
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<br />
+<br />
+<br />
 
-## Learn More
+## 책종류 목록 가져오고
+<img src="https://github.com/KKKHun2/Best_Book_Shop/assets/105702862/1fe25509-fa1a-4cc3-aba4-773e504ed9d1.png" width="900" height="500">
 
-To learn more about Next.js, take a look at the following resources:
+<br />
+<br />
+<br />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 목록중에 아무거나 눌러서 해당 목록 책 리스트 확인 및 마켓이동
+<img src="https://github.com/KKKHun2/Best_Book_Shop/assets/105702862/7f2e33c2-60ce-470e-ae98-c106692bce53.png" width="900" height="500">
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<div align=left><h1>📚 FE STACKS</h1></div>
+<div align=left>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img src="https://img.shields.io/badge/TypeScript-273c75?style=for-the-badge&logo=TypeScript&logoColor=white">
+
+<img src="https://img.shields.io/badge/Nextjs-000000?style=for-the-badge&logo=Nextjs&logoColor=white">
+
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
+
+</div>
